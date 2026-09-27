@@ -1,0 +1,21 @@
+{
+  "name": "youcine-tizen-lab",
+  "version": "0.1.0",
+  "description": "Frontend experimental para Samsung Tizen via TizenBrew",
+  "packageType": "app",
+  "appName": "YouCine Tizen Lab",
+  "appPath": "app/index.html",
+  "keys": [
+    "MediaPlay",
+    "MediaPause",
+    "MediaPlayPause",
+    "MediaStop",
+    "MediaFastForward",
+    "MediaRewind"
+  ],
+  "evaluateScriptOnDocumentStart": false,
+  "files": [
+    "app",
+    "README.md"
+  ]
+}
