@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>YouCine Tizen Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="brand">YC<span>•</span>TIZEN</div>
+      <div class="phase">FASE 2 · FRONTEND LOCAL</div>
+    </header>
+
+    <main>
+      <nav id="menu" aria-label="Menu principal">
+        <button class="focusable active" data-view="home">Home</button>
+        <button class="focusable" data-view="filmes">Filmes</button>
+        <button class="focusable" data-view="series">Séries</button>
+        <button class="focusable" data-view="pesquisa">Pesquisa</button>
+        <button class="focusable" data-view="perfil">Perfil</button>
+      </nav>
+
+      <section id="content">
+        <div class="hero">
+          <div>
+            <div class="eyebrow">VALIDAÇÃO TIZENBREW</div>
+            <h1 id="title">Home</h1>
+            <p id="subtitle">Interface local carregada. Backend e player ainda não conectados.</p>
+          </div>
+          <div class="status">
+            <div><b>TizenBrew</b><span class="ok">PASS</span></div>
+            <div><b>Controle remoto</b><span id="remoteStatus">aguardando tecla</span></div>
+            <div><b>Backend</b><span class="pending">PENDENTE</span></div>
+            <div><b>AVPlay</b><span class="pending">PENDENTE</span></div>
+          </div>
+        </div>
+
+        <h2>Demonstração de navegação</h2>
+        <div id="grid" class="grid"></div>
+
+        <div class="diag">
+          <div><b>User-Agent:</b> <span id="ua"></span></div>
+          <div><b>Viewport:</b> <span id="vp"></span></div>
+          <div><b>Última tecla:</b> <span id="lastKey">—</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      ↑ ↓ ← → navegar · OK selecionar · VOLTAR retorna ao TizenBrew
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
